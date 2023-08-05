@@ -18,6 +18,7 @@ function App() {
       // Parse JSON response into a javascript object
       const data = await response.json();
       //set the Movie state to the movie
+      console.log(data) ;
       setMovie(data);
     } catch(e){
       console.error(e)
@@ -31,8 +32,10 @@ function App() {
  
   return (
     <div className="App">
-      <Form movieSearch={getMovie} />
-      <MovieDisplay movie={movie} />
+      <div className="format">
+        <Form movieSearch={getMovie} />
+        <MovieDisplay movie={movie} />
+      </div>
     </div>
   );
 }

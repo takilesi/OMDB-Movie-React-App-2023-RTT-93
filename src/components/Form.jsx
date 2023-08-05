@@ -21,19 +21,21 @@ function Form(props) {
 
 
 
-     return (
-   <div>
-        <form onSubmit={handleSubmit}>
-         <input 
-         type="text"
-          name="searchTerm" 
-          onChange={handleChange} 
-          value={formData.searchTerm} 
-          />
-         
-         <input type="submit" value="submit"/>
-        </form>
-   </div>
+return (
+   
+      <div id="format">
+         <form onSubmit={handleSubmit}>
+            <input 
+            type="text"
+            name="searchTerm" 
+            onChange={handleChange} 
+            value={formData.searchTerm} 
+            />
+            
+            <input type="submit" value="Enter Movie Name"/>
+         </form>
+      </div>
+   
   )
 }
 
